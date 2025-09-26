@@ -291,10 +291,10 @@
                         { subject: 'Personal Development', teacher: 'Ms. Ortiz', grade: 100 },
                         { subject: 'Physical Education and Health 3', teacher: 'Ms. Damaso', grade: 100 }
                     ]
-                }
+                },
 
-		 '2021003': { 
-                    password: 'mypassword10', 
+                  '20213': { 
+                    password: 'my', 
                     name: 'Eduardo Tian',
                     grades: [
                         { subject: 'Filipino sa Piling Larang', teacher: 'Mr. Banagan', grade: 100 },
@@ -304,6 +304,9 @@
                         { subject: 'Practical Research 2', teacher: 'Mr. Biag', grade: 100 },
                         { subject: 'Personal Development', teacher: 'Ms. Ortiz', grade: 100 },
                         { subject: 'Physical Education and Health 3', teacher: 'Ms. Damaso', grade: 100 }
+		     ]
+             },
+		 
             };
             
            
@@ -354,7 +357,7 @@
                     loginScreen.classList.add('hidden');
                     dashboardScreen.classList.remove('hidden');
                 } else {
-                    // Error message (walang reveal ng credentials)
+                    
                     alert('Invalid Student ID or Password. Please try again.');
                 }
             });
