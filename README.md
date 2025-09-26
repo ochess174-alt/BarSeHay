@@ -1,5 +1,4 @@
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,6 +28,9 @@
         
         body {
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         
         .card {
@@ -72,42 +74,42 @@
 <body class="bg-background text-foreground">
     
     <div id="loginScreen" class="login-container flex items-center justify-center p-4">
-        <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full">
+        <div class="bg-white rounded-xl shadow-2xl p-6 sm:p-8 max-w-md w-full mx-auto">
           
-            <div class="text-center mb-8">
+            <div class="text-center mb-6 sm:mb-8">
                 <div class="flex justify-center mb-4">
                     
-                    <img src="shs.png" alt="Custom Logo" class="logo w-16 h-16 object-contain">
+                    <img src="shs.png" alt="Custom Logo" class="logo w-12 sm:w-16 h-12 sm:h-16 object-contain mx-auto" onerror="this.src='https://via.placeholder.com/64x64/2563eb/ffffff?text=SHS'; this.alt='SHS Logo Placeholder';">
                 </div>
-                <h1 class="text-1xl font-bold text-foreground">Barretto Senior High School</h1>
-                <p class="text-secondary mt-2">Access your report card securely</p>
+                <h1 class="text-lg sm:text-xl font-bold text-foreground">Barretto Senior High School</h1>
+                <p class="text-secondary mt-2 text-sm">Access your report card securely</p>
             </div>
             
-            <form id="loginForm" class="space-y-6">
+            <form id="loginForm" class="space-y-4 sm:space-y-6">
                 <div class="relative">
-                    <input type="text" id="studentId" placeholder=" " class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary peer">
-                    <label for="studentId" class="floating-label absolute left-4 top-3 text-secondary pointer-events-none">Student ID</label>
+                    <input type="text" id="studentId" placeholder=" " class="w-full px-3 sm:px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary peer text-sm sm:text-base">
+                    <label for="studentId" class="floating-label absolute left-3 sm:left-4 top-3 text-secondary pointer-events-none text-xs sm:text-sm">Student ID</label>
                 </div>
                 
                 <div class="relative">
-                    <input type="password" id="password" placeholder=" " class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary peer">
-                    <label for="password" class="floating-label absolute left-4 top-3 text-secondary pointer-events-none">Password</label>
+                    <input type="password" id="password" placeholder=" " class="w-full px-3 sm:px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary peer text-sm sm:text-base">
+                    <label for="password" class="floating-label absolute left-3 sm:left-4 top-3 text-secondary pointer-events-none text-xs sm:text-sm">Password</label>
                 </div>
                 
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <input type="checkbox" id="remember" class="h-4 w-4 text-primary focus:ring-primary border-border rounded">
-                        <label for="remember" class="ml-2 block text-sm text-secondary">Remember me</label>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-2 sm:space-y-0">
+                    <div class="flex items-center flex-shrink-0">
+                        <input type="checkbox" id="remember" class="h-4 w-4 text-primary focus:ring-primary border-border rounded mr-2">
+                        <label for="remember" class="ml-2 block text-xs sm:text-sm text-secondary">Remember me</label>
                     </div>
-                    <a href="#" class="text-sm text-primary hover:underline">Forgot password?</a>
+                    <a href="#" class="text-xs sm:text-sm text-primary hover:underline w-full sm:w-auto text-center sm:text-left">Forgot password?</a>
                 </div>
                 
-                <button type="submit" class="w-full bg-primary text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+                <button type="submit" class="w-full bg-primary text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-sm sm:text-base min-h-[44px]">
                     Sign In
                 </button>
             </form>
             
-            <p class="text-center text-secondary text-sm mt-6">
+            <p class="text-center text-secondary text-xs sm:text-sm mt-4 sm:mt-6">
                 This system provides secure access to your academic records.
             </p>
         </div>
@@ -117,16 +119,16 @@
        
         <header class="bg-white shadow-sm border-b border-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between h-16 items-center">
-                    <div class="flex items-center">
+                <div class="flex flex-col sm:flex-row justify-between h-16 items-center">
+                    <div class="flex items-center w-full sm:w-auto mb-2 sm:mb-0">
                         
-                        <img src="shs.png" alt="Custom Logo" class="logo w-10 h-10 object-contain mr-3">
-                        <span class="text-xl font-semibold text-foreground">Barretto Senior High School</span>
+                        <img src="shs.png" alt="Custom Logo" class="logo w-8 sm:w-10 h-8 sm:h-10 object-contain mr-2 sm:mr-3 flex-shrink-0" onerror="this.src='https://via.placeholder.com/40x40/2563eb/ffffff?text=SHS'; this.alt='SHS Logo Placeholder';">
+                        <span class="text-lg sm:text-xl font-semibold text-foreground truncate">Barretto Senior High School</span>
                     </div>
                     
-                    <div class="flex items-center">
-                        <button id="logoutBtn" class="bg-muted text-secondary px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors">
-                            <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                    <div class="flex items-center w-full sm:w-auto justify-center sm:justify-end mt-2 sm:mt-0">
+                        <button id="logoutBtn" class="bg-muted text-secondary px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium hover:bg-gray-100 transition-colors min-w-[120px] min-h-[40px]">
+                            <i class="fas fa-sign-out-alt mr-1 sm:mr-2"></i>Logout
                         </button>
                     </div>
                 </div>
@@ -134,123 +136,123 @@
         </header>
         
         
-        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
             
-            <div class="mb-8">
-                <h1 class="text-2xl font-bold text-foreground">Welcome, <span id="studentName">RJ Ildefonso</span>!</h1>
-                <p class="text-secondary mt-1">Here's your academic performance for this semester.</p>
+            <div class="mb-6 sm:mb-8">
+                <h1 class="text-xl sm:text-2xl font-bold text-foreground">Welcome, <span id="studentName">RJ Ildefonso</span>!</h1>
+                <p class="text-secondary mt-1 text-sm">Here's your academic performance for this semester.</p>
             </div>
             
            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div class="card bg-white rounded-xl p-6 border border-border">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                <div class="card bg-white rounded-xl p-4 sm:p-6 border border-border">
                     <div class="flex items-center">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-chart-line text-primary text-xl"></i>
+                        <div class="w-10 sm:w-12 h-10 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-chart-line text-primary text-lg sm:text-xl"></i>
                         </div>
-                        <div class="ml-4">
-                            <h3 class="text-sm font-medium text-secondary">Overall Average</h3>
-                            <p id="overallAvg" class="text-2xl font-bold text-foreground">100.0%</p>
+                        <div class="ml-2 sm:ml-4">
+                            <h3 class="text-xs sm:text-sm font-medium text-secondary">Overall Average</h3>
+                            <p id="overallAvg" class="text-lg sm:text-2xl font-bold text-foreground">100.0%</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="card bg-white rounded-xl p-6 border border-border">
+                <div class="card bg-white rounded-xl p-4 sm:p-6 border border-border">
                     <div class="flex items-center">
-                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-trophy text-green-600 text-xl"></i>
+                        <div class="w-10 sm:w-12 h-10 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-trophy text-green-600 text-lg sm:text-xl"></i>
                         </div>
-                        <div class="ml-4">
-                            <h3 class="text-sm font-medium text-secondary">Highest Grade</h3>
-                            <p id="highestGrade" class="text-2xl font-bold text-foreground">100%</p>
+                        <div class="ml-2 sm:ml-4">
+                            <h3 class="text-xs sm:text-sm font-medium text-secondary">Highest Grade</h3>
+                            <p id="highestGrade" class="text-lg sm:text-2xl font-bold text-foreground">100%</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="card bg-white rounded-xl p-6 border border-border">
+                <div class="card bg-white rounded-xl p-4 sm:p-6 border border-border">
                     <div class="flex items-center">
-                        <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-book-open text-amber-600 text-xl"></i>
+                        <div class="w-10 sm:w-12 h-10 sm:h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-book-open text-amber-600 text-lg sm:text-xl"></i>
                         </div>
-                        <div class="ml-4">
-                            <h3 class="text-sm font-medium text-secondary">Subjects</h3>
-                            <p id="numSubjects" class="text-2xl font-bold text-foreground">7</p>
+                        <div class="ml-2 sm:ml-4">
+                            <h3 class="text-xs sm:text-sm font-medium text-secondary">Subjects</h3>
+                            <p id="numSubjects" class="text-lg sm:text-2xl font-bold text-foreground">7</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             
-            <div class="bg-white rounded-xl shadow-sm border border-border overflow-hidden">
-                <div class="px-6 py-5 border-b border-border">
-                    <h2 class="text-lg font-medium text-foreground">Academic Report - October 1, 2025</h2>
+            <div class="bg-white rounded-xl shadow-sm border border-border overflow-hidden mb-6 sm:mb-8">
+                <div class="px-4 sm:px-6 py-4 sm:py-5 border-b border-border">
+                    <h2 class="text-base sm:text-lg font-medium text-foreground">Academic Report - October 1, 2025</h2>
                 </div>
                 
                 <div id="reportCardBody" class="divide-y divide-border">
                     
                 </div>
                 
-                <div class="px-6 py-4 bg-muted border-t border-border">
-                    <div class="flex justify-between items-center">
-                        <span class="font-medium text-foreground">Semester Average</span>
-                        <span id="semesterAvg" class="font-bold text-primary text-lg">100.0%</span>
+                <div class="px-4 sm:px-6 py-3 sm:py-4 bg-muted border-t border-border">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
+                        <span class="font-medium text-foreground text-sm sm:text-base">Semester Average</span>
+                        <span id="semesterAvg" class="font-bold text-primary text-base sm:text-lg">100.0%</span>
                     </div>
                 </div>
             </div>
             
             
-            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white rounded-xl p-6 border border-border">
-                    <h3 class="font-medium text-foreground mb-4">Core Values</h3>
-                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100 space-y-3">
-                        <div class="flex items-start">
-                            <i class="fas fa-pray text-primary mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-semibold text-foreground">Makadiyos</h4>
-                                <p class="text-sm text-secondary">Always Observed</p>
+            <div class="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                <div class="bg-white rounded-xl p-4 sm:p-6 border border-border">
+                    <h3 class="font-medium text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Core Values</h3>
+                    <div class="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-100 space-y-2 sm:space-y-3">
+                        <div class="flex items-start text-sm">
+                            <i class="fas fa-pray text-primary mt-1 mr-2 sm:mr-3 flex-shrink-0 text-base"></i>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-foreground text-sm">Makadiyos</h4>
+                                <p class="text-xs sm:text-sm text-secondary">Always Observed</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-users text-primary mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-semibold text-foreground">Makatao</h4>
-                                <p class="text-sm text-secondary">Always Observed</p>
+                        <div class="flex items-start text-sm">
+                            <i class="fas fa-users text-primary mt-1 mr-2 sm:mr-3 flex-shrink-0 text-base"></i>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-foreground text-sm">Makatao</h4>
+                                <p class="text-xs sm:text-sm text-secondary">Always Observed</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-leaf text-primary mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-semibold text-foreground">Makakalikasan</h4>
-                                <p class="text-sm text-secondary">Always Observed</p>
+                        <div class="flex items-start text-sm">
+                            <i class="fas fa-leaf text-primary mt-1 mr-2 sm:mr-3 flex-shrink-0 text-base"></i>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-foreground text-sm">Makakalikasan</h4>
+                                <p class="text-xs sm:text-sm text-secondary">Always Observed</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-flag text-primary mt-1 mr-3"></i>
-                            <div>
-                                <h4 class="font-semibold text-foreground">Makabansa</h4>
-                                <p class="text-sm text-secondary">Always Observed</p>
+                        <div class="flex items-start text-sm">
+                            <i class="fas fa-flag text-primary mt-1 mr-2 sm:mr-3 flex-shrink-0 text-base"></i>
+                            <div class="flex-1 min-w-0">
+                                <h4 class="font-semibold text-foreground text-sm">Makabansa</h4>
+                                <p class="text-xs sm:text-sm text-secondary">Always Observed</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-xl p-6 border border-border">
-                    <h3 class="font-medium text-foreground mb-4">Teacher's Comments</h3>
-                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                        <p class="text-sm text-foreground">
+                <div class="bg-white rounded-xl p-4 sm:p-6 border border-border">
+                    <h3 class="font-medium text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Teacher's Comments</h3>
+                    <div class="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-100">
+                        <p class="text-sm sm:text-base text-foreground leading-relaxed">
                             "Excellent performance across all subjects! Keep maintaining this outstanding level."
                         </p>
-                        <p class="text-xs text-secondary mt-2">- Overall Faculty Comment</p>
+                        <p class="text-xs sm:text-sm text-secondary mt-2">- Overall Faculty Comment</p>
                     </div>
                 </div>
             </div>
         </main>
         
         
-        <footer class="bg-white border-t border-border mt-12">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-sm text-secondary mt-2 md:mt-0">© 2025 School Name. All rights reserved.</p>
+        <footer class="bg-white border-t border-border mt-8 sm:mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center text-center sm:text-left">
+                    <p class="text-xs sm:text-sm text-secondary mt-2 md:mt-0">© 2025 School Name. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -263,6 +265,7 @@
             const dashboardScreen = document.getElementById('dashboardScreen');
             const logoutBtn = document.getElementById('logoutBtn');
             const studentNameEl = document.getElementById('studentName');
+            
             
             
             const students = {
@@ -386,6 +389,10 @@
     </script>
 </body>
 </html>
+
+
+
+
 
 
 
