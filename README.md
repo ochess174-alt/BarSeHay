@@ -79,7 +79,7 @@
                     
                     <img src="shs.png" alt="Custom Logo" class="logo w-16 h-16 object-contain">
                 </div>
-                <h1 class="text-5xl font-bold text-foreground">Barretto Senior High School</h1>
+                <h1 class="text-1xl font-bold text-foreground">Barretto Senior High School</h1>
                 <p class="text-secondary mt-2">Access your report card securely</p>
             </div>
             
