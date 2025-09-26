@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +59,6 @@
             color: #2563eb;
         }
         
-        /* Logo Animation */
         .logo {
             transition: transform 0.3s ease;
         }
@@ -71,7 +69,7 @@
     </style>
 </head>
 <body class="bg-background text-foreground">
-    <!-- Login Screen -->
+    
     <div id="loginScreen" class="login-container flex items-center justify-center p-4">
         <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md w-full">
           
@@ -115,7 +113,7 @@
     </div>
    
     <div id="dashboardScreen" class="hidden min-h-screen">
-        <!-- Header -->
+       
         <header class="bg-white shadow-sm border-b border-border">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16 items-center">
@@ -387,3 +385,5 @@
     </script>
 </body>
 </html>
+
+
