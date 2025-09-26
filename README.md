@@ -292,6 +292,18 @@
                         { subject: 'Physical Education and Health 3', teacher: 'Ms. Damaso', grade: 100 }
                     ]
                 }
+
+		 '2021003': { 
+                    password: 'mypassword10', 
+                    name: 'Eduardo Tian',
+                    grades: [
+                        { subject: 'Filipino sa Piling Larang', teacher: 'Mr. Banagan', grade: 100 },
+                        { subject: 'Understanding Culture, Society and Politics', teacher: 'Ms. Echon', grade: 100 },
+                        { subject: 'Contact Center Services', teacher: 'Ms. Balois', grade: 100 },
+                        { subject: 'English for Academics & Professional Purporses', teacher: 'Mr. Manuel', grade: 100 },
+                        { subject: 'Practical Research 2', teacher: 'Mr. Biag', grade: 100 },
+                        { subject: 'Personal Development', teacher: 'Ms. Ortiz', grade: 100 },
+                        { subject: 'Physical Education and Health 3', teacher: 'Ms. Damaso', grade: 100 }
             };
             
            
