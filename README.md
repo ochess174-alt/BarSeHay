@@ -238,7 +238,7 @@
                 
                 <div class="bg-white rounded-xl p-4 sm:p-6 border border-border">
                     <h3 class="font-medium text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Teacher's Comments</h3>
-                    <div class="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-100">
+                    <div id="teacherComments" class="bg-blue-50 p-3 sm:p-4 rounded-lg border border-blue-100">
                         <p class="text-sm sm:text-base text-foreground leading-relaxed">
                             "Excellent performance across all subjects! Keep maintaining this outstanding level."
                         </p>
